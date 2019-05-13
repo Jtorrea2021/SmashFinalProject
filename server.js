@@ -22,6 +22,13 @@ app.get('/signup', function (req, res) {
   res.render('signup')
 })
 
+app.post('/signupPost', function(req, res) {
+  res.render('signupPost')
+})
+
+app.post('/loginPost', function(req, res) {
+  res.render('loginPost')
+})
 //this is a change
 
 app.listen(3000)
