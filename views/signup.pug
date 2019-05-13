@@ -1,0 +1,19 @@
+extends layout.pug
+block content
+  form(action="/signupPost" method="POST")
+    .form-group
+      label(for='exampleInputEmail1') Email address
+      input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email', name='email')
+    .col-auto
+      label.sr-only(for='inlineFormInputGroup') Username
+      .input-group.mb-2
+        .input-group-prepend
+          .input-group-text @
+        input#inlineFormInputGroup.form-control(type='text', placeholder='Username', name='username')
+    .form-group
+      label(for='exampleInputPassword1') Password
+      input#exampleInputPassword1.form-control(type='password', placeholder='Password', name='password')
+    .form-group
+      label(for='exampleInputPassword1') Confirm Password
+      input#exampleInputPassword1.form-control(type='password', placeholder='Password', name='passwordConfirmation')
+    button.btn.btn-dark(type='submit') Submit
