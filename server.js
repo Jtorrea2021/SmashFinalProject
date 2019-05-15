@@ -58,4 +58,16 @@ app.get('/characterList4', function(req, res) {
   res.render('characterList4')
 })
 
+app.get('/characterList5', function(req, res) {
+  res.render('characterList5')
+})
+
+app.get('/characterList6', function(req, res) {
+  res.render('characterList6')
+})
+
+app.get('/characterList7', function(req, res) {
+  res.render('characterList7')
+})
+
 app.listen(3000)
