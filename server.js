@@ -41,6 +41,21 @@ app.get('/passive', function(req, res) {
 app.get('/variety', function(req, res) {
   res.render('variety')
 })
-//this is a change
+
+app.get('/characterList1', function(req, res) {
+  res.render('characterList1')
+})
+
+app.get('/characterList2', function(req, res) {
+  res.render('characterList2')
+})
+
+app.get('/characterList3', function(req, res) {
+  res.render('characterList3')
+})
+
+app.get('/characterList4', function(req, res) {
+  res.render('characterList4')
+})
 
 app.listen(3000)
