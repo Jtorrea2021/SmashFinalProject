@@ -29,6 +29,18 @@ app.post('/signupPost', function(req, res) {
 app.post('/loginPost', function(req, res) {
   res.render('loginPost')
 })
+
+app.get('/aggressive', function(req, res) {
+  res.render('aggressive')
+})
+
+app.get('/passive', function(req, res) {
+  res.render('passive')
+})
+
+app.get('/variety', function(req, res) {
+  res.render('variety')
+})
 //this is a change
 
 app.listen(3000)

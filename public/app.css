@@ -59,8 +59,13 @@ textarea {
 button {
   font-family:'Gugi', cursive;
   color: black;
-  margin-left: .5em;
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+
+.buttonHolder {
   text-align: center;
+  margin-top: 9em
 }
 
 p {

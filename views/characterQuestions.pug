@@ -4,9 +4,10 @@ block content
   h2 Answer these questions so that we know what character fits you best!
   form 
     h4 How do you usually play Smash Bros.? How do you prefer to fight?
-    button.btn.btn-dark(type='button') Aggressive
-    button.btn.btn-dark(type='button') Passive
-    button.btn.btn-dark(type='button') In Between
+    .buttonHolder  
+      button.btn.btn-dark(onclick="window.location.href = '/aggressive';" type='button') Aggressive
+      button.btn.btn-dark(onclick="window.location.href = '/passive';" type='button') Passive
+      button.btn.btn-dark(onclick="window.location.href = '/variety';" type='button') In Between
   
 
 
