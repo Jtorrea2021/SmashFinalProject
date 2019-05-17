@@ -61,4 +61,49 @@ $( document ).ready(function() {
       $('#simonModal').modal('show');
     });
 
+    $('#summaryMarth').on('click', function(e) {
+      console.log('button was clicked')
+      $('#marthModal').modal('show');
+    });
+
+    $('#summaryOlimar').on('click', function(e) {
+      console.log('button was clicked')
+      $('#olimarModal').modal('show');
+    });
+
+    $('#summaryCloud').on('click', function(e) {
+      console.log('button was clicked')
+      $('#cloudModal').modal('show');
+    });
+
+    $('#summaryYoshi').on('click', function(e) {
+      console.log('button was clicked')
+      $('#yoshiModal').modal('show');
+    });
+
+    $('#summaryJigglypuff').on('click', function(e) {
+      console.log('button was clicked')
+      $('#jigglypuffModal').modal('show');
+    });
+
+    $('#summaryPirahnaPlant').on('click', function(e) {
+      console.log('button was clicked')
+      $('#pirahnaPlantModal').modal('show');
+    });
+
+    $('#summaryPokemonTrainer').on('click', function(e) {
+      console.log('button was clicked')
+      $('#pokemonTrainerModal').modal('show');
+    });
+
+    $('#summaryShulk').on('click', function(e) {
+      console.log('button was clicked')
+      $('#shulkModal').modal('show');
+    });
+
+    $('#summaryJoker').on('click', function(e) {
+      console.log('button was clicked')
+      $('#jokerModal').modal('show');
+    });
+
 });
