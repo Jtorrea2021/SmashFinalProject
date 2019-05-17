@@ -16,7 +16,7 @@ nav {
 }
 
 a {
-  color: blue;
+  color: black;
   font-family:'Gugi', cursive;
 }
 
@@ -72,6 +72,17 @@ button {
 }
 
 .characterDiv {
+  margin: 10px auto;
+  width: 900px;
+  height: 300px;
+  padding: 1em;
+  border: 5px solid black;
+  border-radius: 1em;
+  color: black;
+  background-color: white;
+}
+
+.userDiv {
   margin: 10px auto;
   width: 900px;
   height: 300px;
