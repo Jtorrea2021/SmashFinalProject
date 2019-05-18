@@ -132,4 +132,6 @@ app.get('/home', function(req, res) {
   res.render('home', { user: req.user })
 })
 
+app.post('/user/set-character', userController.chosenCharacter)
+
 app.listen(3000)

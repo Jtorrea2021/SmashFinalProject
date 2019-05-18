@@ -106,4 +106,21 @@ $( document ).ready(function() {
       $('#jokerModal').modal('show');
     });
 
+    $('#choosePikachu').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
 });

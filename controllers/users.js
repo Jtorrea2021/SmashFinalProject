@@ -30,3 +30,25 @@ exports.newUser = function(req, res) {
     })
   })
 }
+
+exports.chosenCharacter = function(req, res) {
+    console.log('chose new character')
+    console.log(req.body)
+    console.log(req.user)
+    User.findById(req.user._id, function(error, user) {
+      if (error) {
+        console.log(error)
+        return
+      }
+      user.character = req.body.character
+      user.characterURL = req.body.imgURL
+      user.save(function (err) {
+        if (err) {
+          console.log(err)
+        }
+        console.log('Data saved to database')
+        res.json({success: 'character set successfully!'})
+      });
+    })
+
+}
