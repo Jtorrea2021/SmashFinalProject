@@ -106,15 +106,17 @@ $( document ).ready(function() {
       $('#jokerModal').modal('show');
     });
 
-    $('#choosePikachu').on('click', function(e) {
+    $('.pickCharacter').on('click', function(e) {
       console.log('button was clicked')
-      const character = $(e.target)[0].dataset.name
-      const imgURL = $(`img#${character}`)[0].src
+      const characterName = $(e.target)[0].dataset.name
+      const imageId = $(e.target)[0].dataset.imgid
+      console.log(imageId)
+      const imgURL = $(`img#${imageId}`)[0].src
       $.ajax({
         method: "POST",
         url: `/user/set-character`,
         data: {
-          character: character,
+          character: characterName,
           imgURL: imgURL,
         }
       }).done(function(response) {
