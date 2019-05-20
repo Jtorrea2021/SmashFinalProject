@@ -3,25 +3,25 @@ extends layout.pug
 block content
   h4 Finally choose the character that you're the most interested in!
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/4/44/Mario_SSBU.png/250px-Mario_SSBU.png')
+    img#Mario(src='https://www.ssbwiki.com/images/thumb/4/44/Mario_SSBU.png/250px-Mario_SSBU.png')
     h5 Mario
     button#summaryMario.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseMario.btn.btn-dark(type='button' style="float:right" data-name='Mario') 
       | Choose
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/0/00/Sheik_SSBU.png/250px-Sheik_SSBU.png')
+    img#Sheik(src='https://www.ssbwiki.com/images/thumb/0/00/Sheik_SSBU.png/250px-Sheik_SSBU.png')
     h5 Sheik
     button#summarySheik.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseSheik.btn.btn-dark(type='button' style="float:right" data-name='Sheik') 
       | Choose
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/7/7c/Bayonetta_SSBU.png/240px-Bayonetta_SSBU.png')
+    img#Bayonetta(src='https://www.ssbwiki.com/images/thumb/7/7c/Bayonetta_SSBU.png/240px-Bayonetta_SSBU.png')
     h5 Bayonetta
     button#summaryBayonetta.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseBayonetta.btn.btn-dark(type='button' style="float:right" data-name='Bayonetta') 
       | Choose
   
   #marioModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')

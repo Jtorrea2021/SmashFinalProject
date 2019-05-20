@@ -3,25 +3,25 @@ extends layout.pug
 block content
   h4 Finally choose the character that you're the most interested in!
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/8/8d/Yoshi_SSBU.png/250px-Yoshi_SSBU.png')
+    img#Yoshi(src='https://www.ssbwiki.com/images/thumb/8/8d/Yoshi_SSBU.png/250px-Yoshi_SSBU.png')
     h5 Yoshi
     button#summaryYoshi.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseYoshi.btn.btn-dark(type='button' style="float:right" data-name='Yoshi') 
       | Choose
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/6/6a/Jigglypuff_SSBU.png/250px-Jigglypuff_SSBU.png')
+    img#Jigglypuff(src='https://www.ssbwiki.com/images/thumb/6/6a/Jigglypuff_SSBU.png/250px-Jigglypuff_SSBU.png')
     h5 Jigglypuff
     button#summaryJigglypuff.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseJigglypuff.btn.btn-dark(type='button' style="float:right" data-name='Jigglypuff') 
       | Choose
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/f/f0/Piranha_Plant_SSBU.png/250px-Piranha_Plant_SSBU.png')
+    img#PirahnaPlant(src='https://www.ssbwiki.com/images/thumb/f/f0/Piranha_Plant_SSBU.png/250px-Piranha_Plant_SSBU.png')
     h5 Pirahna Plant
     button#summaryPirahnaPlant.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#choosePirahnaPlant.btn.btn-dark(type='button' style="float:right" data-name='PirahnaPlant') 
       | Choose
 
   #yoshiModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')

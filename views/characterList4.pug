@@ -3,25 +3,25 @@ extends layout.pug
 block content
   h4 Finally choose the character that you're the most interested in!
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/8/8a/Young_Link_SSBU.png/250px-Young_Link_SSBU.png')
+    img#YoungLink(src='https://www.ssbwiki.com/images/thumb/8/8a/Young_Link_SSBU.png/250px-Young_Link_SSBU.png')
     h5 Young Link
     button#summaryYoungLink.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseYoungLink.btn.btn-dark(type='button' style="float:right" data-name='YoungLink') 
       | Choose
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/0/02/Snake_SSBU.png/250px-Snake_SSBU.png')
+    img#Snake(src='https://www.ssbwiki.com/images/thumb/0/02/Snake_SSBU.png/250px-Snake_SSBU.png')
     h5 Snake
     button#summarySnake.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseSnake.btn.btn-dark(type='button' style="float:right" data-name='Snake') 
       | Choose
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/9/95/Simon_SSBU.png/250px-Simon_SSBU.png')
+    img#Simon(src='https://www.ssbwiki.com/images/thumb/9/95/Simon_SSBU.png/250px-Simon_SSBU.png')
     h5 Simon
     button#summarySimon.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseSimon.btn.btn-dark(type='button' style="float:right" data-name='Simon') 
       | Choose
   
   #youngLinkModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')

@@ -3,25 +3,25 @@ extends layout.pug
 block content
   h4 Finally choose the character that you're the most interested in!
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/e/e9/Marth_SSBU.png/250px-Marth_SSBU.png')
+    img#Marth(src='https://www.ssbwiki.com/images/thumb/e/e9/Marth_SSBU.png/250px-Marth_SSBU.png')
     h5 Marth
     button#summaryMarth.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseMarth.btn.btn-dark(type='button' style="float:right" data-name='Marth') 
       | Choose
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/b/b3/Olimar_SSBU.png/250px-Olimar_SSBU.png')
+    img#Olimar(src='https://www.ssbwiki.com/images/thumb/b/b3/Olimar_SSBU.png/250px-Olimar_SSBU.png')
     h5 Olimar
     button#summaryOlimar.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseOlimar.btn.btn-dark(type='button' style="float:right" data-name='Olimar') 
       | Choose
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/b/b3/Cloud_SSBU.png/250px-Cloud_SSBU.png')
+    img#Cloud(src='https://www.ssbwiki.com/images/thumb/b/b3/Cloud_SSBU.png/250px-Cloud_SSBU.png')
     h5 Cloud
     button#summaryCloud.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseCloud.btn.btn-dark(type='button' style="float:right" data-name='Cloud') 
       | Choose
 
   #marthModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')

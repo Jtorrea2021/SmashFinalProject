@@ -3,25 +3,25 @@ extends layout.pug
 block content
   h4 Finally choose the character that you're the most interested in!
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/2/28/Pok%C3%A9mon_Trainer_%28solo%29_SSBU.png/300px-Pok%C3%A9mon_Trainer_%28solo%29_SSBU.png')
+    img#PokemonTrainer(src='https://www.ssbwiki.com/images/thumb/2/28/Pok%C3%A9mon_Trainer_%28solo%29_SSBU.png/300px-Pok%C3%A9mon_Trainer_%28solo%29_SSBU.png')
     h5 Pokemon Trainer
     button#summaryPokemonTrainer.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#choosePokemonTrainer.btn.btn-dark(type='button' style="float:right" data-name='PokemonTrainer') 
       | Choose
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/0/0f/Shulk_SSBU.png/250px-Shulk_SSBU.png')
+    img#Shulk(src='https://www.ssbwiki.com/images/thumb/0/0f/Shulk_SSBU.png/250px-Shulk_SSBU.png')
     h5 Shulk
     button#summaryShulk.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseShulk.btn.btn-dark(type='button' style="float:right" data-name='Shulk') 
       | Choose
   .characterDiv
-    img(src='https://www.ssbwiki.com/images/thumb/5/5c/Joker_SSBU.png/500px-Joker_SSBU.png')
+    img#Joker(src='https://www.ssbwiki.com/images/thumb/5/5c/Joker_SSBU.png/500px-Joker_SSBU.png')
     h5 Joker
     button#summaryJoker.btn.btn-dark(type='button' style="float:left") 
       | Summary
-    button#choose.btn.btn-dark(type='button' style="float:right") 
+    button#chooseJoker.btn.btn-dark(type='button' style="float:right" data-name='Joker') 
       | Choose
 
   #pokemonTrainerModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')

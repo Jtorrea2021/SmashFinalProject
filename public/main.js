@@ -123,4 +123,344 @@ $( document ).ready(function() {
       });
     });
 
+    $('#chooseLittleMac').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseSonic').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseMario').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseSheik').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseBayonetta').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseDonkeyKong').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseGanondorf').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseKingKRool').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseYoungLink').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseSnake').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseSimon').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseMarth').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseOlimar').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseCloud').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseYoshi').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseJigglypuff').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#choosePirahnaPlant').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#choosePokemonTrainer').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseShulk').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
+    $('#chooseJoker').on('click', function(e) {
+      console.log('button was clicked')
+      const character = $(e.target)[0].dataset.name
+      const imgURL = $(`img#${character}`)[0].src
+      $.ajax({
+        method: "POST",
+        url: `/user/set-character`,
+        data: {
+          character: character,
+          imgURL: imgURL,
+        }
+      }).done(function(response) {
+        console.log(response)
+        window.location = '/home'
+      });
+    });
+
 });
