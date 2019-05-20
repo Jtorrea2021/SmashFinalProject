@@ -134,4 +134,9 @@ app.get('/home', function(req, res) {
 
 app.post('/user/set-character', userController.chosenCharacter)
 
+app.get('/Pikachu', function(req, res) {
+  res.render('Pikachu', { user: req.user })
+})
+
+
 app.listen(3000)
