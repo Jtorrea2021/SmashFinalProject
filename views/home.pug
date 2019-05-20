@@ -5,4 +5,4 @@ block content
     h2 Your character is #{user.character}
     img(src = user.characterURL)
   h5 Learn new #{user.character} strats here!
-  button.btn.btn-dark(onclick="window.location.href = '/#'{#{user.character}'}';" type='button') STRATS
+  button.btn.btn-dark(onclick="window.location.href = '" + user.character + "';" type='button') STRATS
